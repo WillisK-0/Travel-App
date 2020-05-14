@@ -18,7 +18,12 @@
 
 <ul>
 {{#trips}}
-<li>{{destination}} - {{departDate}}-{{returnDate}}</li>
+<li>{{destination}} - {{departDate}}-{{returnDate}}
+<form method='POST' action='/travel/delete-trip'>
+<input type='hidden' value={{destination}} name='destination'>
+<button>Delete</button>
+</form>
+</li>
 
 
 

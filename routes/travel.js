@@ -40,6 +40,12 @@ router.post('/add-trip',authenticate,(req,res)=>{
 
 })
 
+router.post('/delete-trip',authenticate,(req,res)=>{
+    let destination = req.body.destination
+    trips = trips.filter(trip => trip.destination != destination)
+    res.redirect('/travel')
+})
+
 
 
 
