@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<link rel='stylesheet' href='http://localhost:3000/css/travel.css'>
+</head>
+
+<body>
+
+<div id='header'>
+<h1>Trip Planner</h1>
+</div>
+
+
+<form action='/travel/add-trip'>
+<button>Create trip</button>
+</form>
+
+
+<ul>
+{{#trips}}
+<li>{{destination}} - {{departDate}}-{{returnDate}}</li>
+
+
+
+
+</ul>
+
+{{/trips}}
+</body>
+
+
+
+</html>
