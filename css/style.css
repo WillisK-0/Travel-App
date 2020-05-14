@@ -1,3 +1,18 @@
 body{
-    background-color: beige;
+    background-color: #e8eff1;
+}
+
+#wrapper{
+    width: 322px;
+    position: relative;
+    height: auto;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: #002a77;
+    border-style: solid;
+    text-align: center;
+    padding:10px;
 }
